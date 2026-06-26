@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taverna Akropolis – Griechisches Restaurant in Petershagen-Lahde</title>
+<meta name="description" content="Griechisch essen in Petershagen-Lahde nahe Minden. Traditionelle griechische Küche, Gyros, Souvlaki. Partyservice & Lieferung. Familie Baila. Ab 17 Uhr geöffnet.">
+<meta name="keywords" content="Griechisches Restaurant Petershagen, griechisch essen Lahde, Restaurant nahe Minden, Gyros Petershagen, Partyservice Petershagen, Taverna Akropolis">
+<meta property="og:title" content="Taverna Akropolis – Griechisches Restaurant Petershagen-Lahde">
+<meta property="og:description" content="Ein kleines Stück Griechenland mitten in Lahde. Traditionelle Küche, Partyservice, täglich ab 17 Uhr.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.akropolis-lahde.de">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Taverna Akropolis",
+  "description": "Traditionelles griechisches Restaurant in Petershagen-Lahde",
+  "telephone": "+4957021874",
+  "url": "https://www.akropolis-lahde.de",
+  "servesCuisine": "Greek",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bahnhofstr. 55",
+    "postalCode": "32469",
+    "addressLocality": "Petershagen",
+    "addressRegion": "Nordrhein-Westfalen",
+    "addressCountry": "DE"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "17:00", "closes": "23:00" }
+  ],
+  "paymentAccepted": "Cash"
+}
+</script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Georgia', serif; color: #1a1a1a; background: #fff; }
+.fade-in { opacity:0; transform:translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
+nav { position: sticky; top:0; z-index:100; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); border-bottom: 1px solid #e8dfd0; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; height: 64px; }
+.nav-logo { font-size: 1.15rem; font-weight: 700; color: #7a2d0e; text-decoration: none; }
+.nav-logo span { color: #c9a84c; }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a { font-family: 'Helvetica Neue', sans-serif; font-size: 0.83rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: #555; transition: color 0.2s; }
+.nav-links a:hover { color: #7a2d0e; }
+.nav-cta { background: #7a2d0e; color: #fff !important; padding: 0.5rem 1.2rem; border-radius: 3px; font-family: 'Helvetica Neue', sans-serif; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+.nav-cta:hover { background: #5a1f08 !important; }
+.hero { height: 92vh; min-height: 560px; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem; }
+.hero-bg { position: absolute; inset: 0; z-index: 0; background: linear-gradient(160deg, #2d0e05 0%, #7a2d0e 50%, #c0622a 100%); }
+.hero-pattern { position: absolute; inset: 0; z-index: 1; opacity: 0.06; background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 L20 0 L40 20 L20 40 Z' fill='none' stroke='%23fff' stroke-width='1'/%3E%3C/svg%3E"); }
+.hero-overlay { position: absolute; inset: 0; z-index: 2; background: linear-gradient(to bottom, rgba(45,14,5,0.3), rgba(45,14,5,0.6)); }
+.hero > * { position: relative; z-index: 3; }
+.hero-eyebrow { font-family: 'Helvetica Neue', sans-serif; font-size: 0.75rem; letter-spacing: 0.25em; text-transform: uppercase; color: #c9a84c; margin-bottom: 1.2rem; }
+.hero h1 { font-size: clamp(2.6rem, 6vw, 4.8rem); color: #fff; line-height: 1.05; font-weight: 400; max-width: 780px; margin-bottom: 0.8rem; }
+.hero h1 em { font-style: italic; color: #f0c87a; }
+.hero-sub { font-family: 'Helvetica Neue', sans-serif; font-size: 1rem; color: rgba(255,255,255,0.78); max-width: 480px; line-height: 1.7; margin-bottom: 2.5rem; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+.btn-primary { background: #c9a84c; color: #2d0e05; padding: 0.9rem 2rem; font-family: 'Helvetica Neue', sans-serif; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border-radius: 3px; font-weight: 700; transition: background 0.2s; display: inline-block; border: none; cursor: pointer; }
+.btn-primary:hover { background: #e0be6a; }
+.btn-red { background: #7a2d0e; color: #fff !important; }
+.btn-red:hover { background: #5a1f08 !important; }
+.btn-ghost { border: 1px solid rgba(255,255,255,0.45); color: rgba(255,255,255,0.88); padding: 0.9rem 2rem; font-family: 'Helvetica Neue', sans-serif; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; border-radius: 3px; transition: border-color 0.2s; }
+.btn-ghost:hover { border-color: #fff; color: #fff; }
+.hero-wave { position: absolute; bottom: -2px; left: 0; right: 0; z-index: 4; }
+.stats { display: flex; justify-content: center; background: #faf6f0; border-bottom: 1px solid #e8dfd0; }
+.stat { text-align: center; padding: 1.8rem 3rem; border-right: 1px solid #e8dfd0; flex: 1; max-width: 240px; }
+.stat:last-child { border-right: none; }
+.stat-num { font-size: 2rem; font-weight: 400; color: #7a2d0e; line-height: 1; }
+.stat-label { font-family: 'Helvetica Neue', sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-top: 0.4rem; }
+.section-full { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+.section-eyebrow { font-family: 'Helvetica Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: #c9a84c; margin-bottom: 0.8rem; }
+.section-title { font-size: 2.2rem; font-weight: 400; color: #2d0e05; line-height: 1.2; max-width: 560px; margin-bottom: 1.3rem; }
+.section-body { font-family: 'Helvetica Neue', sans-serif; font-size: 1rem; line-height: 1.8; color: #555; max-width: 520px; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.two-col.reverse .col-text { order: 2; }
+.two-col.reverse .col-img { order: 1; }
+.col-img { border-radius: 8px; overflow: hidden; aspect-ratio: 4/3; }
+.col-img-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem; }
+.col-img-placeholder.greek { background: linear-gradient(135deg, #7a2d0e, #c0622a); color: #fff; }
+.col-img-placeholder.gold { background: linear-gradient(135deg, #5a3a0a, #c9a84c); color: #fff; }
+.col-img-label { font-family: 'Helvetica Neue', sans-serif; font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem; }
+.col-img-main { font-size: 2rem; font-weight: 400; line-height: 1.2; }
+.col-img-sub { font-family: 'Helvetica Neue', sans-serif; font-size: 0.85rem; color: rgba(255,255,255,0.65); margin-top: 0.5rem; }
+.photo-hint { margin-top: 0.8rem; font-family: 'Helvetica Neue', sans-serif; font-size: 0.78rem; color: rgba(255,255,255,0.45); font-style: italic; }
+.menu-bg { background: #2d0e05; padding: 5rem 2rem; }
+.menu-inner { max-width: 1100px; margin: 0 auto; }
+.menu-eyebrow { font-family: 'Helvetica Neue', sans-serif; font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: #c9a84c; margin-bottom: 0.8rem; }
+.menu-title { font-size: 2.2rem; font-weight: 400; color: #fff; line-height: 1.2; margin-bottom: 0.5rem; }
+.menu-sub { font-family: 'Helvetica Neue', sans-serif; color: rgba(255,255,255,0.55); font-size: 0.9rem; margin-bottom: 3rem; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; overflow: hidden; }
+.menu-item { background: rgba(255,255,255,0.04); padding: 1.4rem 1.5rem; }
+.menu-item-icon { font-size: 1.4rem; margin-bottom: 0.6rem; }
+.menu-item-name { font-size: 1rem; color: #fff; margin-bottom: 0.3rem; }
+.menu-item-desc { font-family: 'Helvetica Neue', sans-serif; font-size: 0.82rem; color: rgba(255,255,255,0.5); line-height: 1.5; }
+.menu-cta { margin-top: 2.5rem; text-align: center; }
+.reviews-bg { background: #faf6f0; padding: 5rem 2rem; }
+.reviews-inner { max-width: 1100px; margin: 0 auto; }
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.review-card { background: #fff; border: 1px solid #e8dfd0; border-radius: 8px; padding: 1.5rem; }
+.review-stars { color: #c9a84c; font-size: 1rem; margin-bottom: 0.6rem; }
+.review-text { font-family: 'Helvetica Neue', sans-serif; font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 1rem; font-style: italic; }
+.review-author { font-family: 'Helvetica Neue', sans-serif; font-size: 0.78rem; color: #999; }
+.info-bg { background: #faf6f0; padding: 5rem 2rem; }
+.info-inner { max-width: 1100px; margin: 0 auto; }
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.info-card { background: #fff; border: 1px solid #e8dfd0; border-radius: 8px; padding: 1.5rem; }
+.info-card-icon { font-size: 1.5rem; margin-bottom: 0.8rem; }
+.info-card h3 { font-family: 'Helvetica Neue', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #7a2d0e; margin-bottom: 0.7rem; }
+.info-card p { font-family: 'Helvetica Neue', sans-serif; font-size: 0.88rem; color: #555; line-height: 1.7; }
+.info-card strong { color: #2d0e05; }
+.info-card a { color: #7a2d0e; text-decoration: none; font-weight: 600; }
+.badge-open { display: inline-block; background: #e6f3e6; color: #2c4a2e; font-family: 'Helvetica Neue', sans-serif; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 20px; margin-bottom: 0.8rem; font-weight: 600; }
+.badge-cash { display: inline-block; background: #fff3e0; color: #7a2d0e; font-family: 'Helvetica Neue', sans-serif; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 20px; margin-bottom: 0.8rem; font-weight: 600; }
+.map-consent { background: #f0ebe3; border: 1px solid #e8dfd0; border-radius: 8px; margin-top: 3rem; padding: 2.5rem; text-align: center; }
+.map-consent p { font-family: 'Helvetica Neue', sans-serif; font-size: 0.9rem; color: #666; line-height: 1.7; max-width: 480px; margin: 0 auto 1.2rem; }
+.map-consent small { font-family: 'Helvetica Neue', sans-serif; font-size: 0.78rem; color: #999; display: block; margin-top: 0.8rem; }
+.map-wrap { border-radius: 8px; overflow: hidden; margin-top: 3rem; height: 320px; display: none; }
+.map-wrap iframe { width: 100%; height: 100%; border: 0; }
+.cta-bar { background: #7a2d0e; padding: 4rem 2rem; text-align: center; }
+.cta-bar h2 { font-size: 2rem; color: #fff; font-weight: 400; margin-bottom: 0.8rem; }
+.cta-bar p { font-family: 'Helvetica Neue', sans-serif; color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.7; max-width: 440px; margin: 0 auto 2rem; }
+.contact-split { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-top: 3rem; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-family: 'Helvetica Neue', sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #666; margin-bottom: 0.4rem; }
+.form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.7rem 1rem; border: 1px solid #ddd; border-radius: 4px; font-family: 'Helvetica Neue', sans-serif; font-size: 0.95rem; color: #1a1a1a; background: #fafaf8; outline: none; transition: border-color 0.2s; }
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: #7a2d0e; }
+.form-group textarea { height: 110px; resize: vertical; }
+.form-sending { display:none; font-family: 'Helvetica Neue', sans-serif; font-size: 0.88rem; color: #888; margin-top: 0.8rem; }
+.form-success { display:none; background: #e6f3e6; color: #2c4a2e; padding: 0.9rem 1rem; border-radius: 4px; font-family: 'Helvetica Neue', sans-serif; font-size: 0.88rem; margin-top: 0.8rem; }
+.form-error { display:none; background: #fce8e8; color: #7a1a1a; padding: 0.9rem 1rem; border-radius: 4px; font-family: 'Helvetica Neue', sans-serif; font-size: 0.88rem; margin-top: 0.8rem; }
+.contact-info p { font-family: 'Helvetica Neue', sans-serif; font-size: 0.95rem; line-height: 2.3; color: #444; }
+.contact-info a { color: #7a2d0e; text-decoration: none; }
+.contact-note { margin-top: 1.5rem; padding: 1.2rem; background: #faf6f0; border-radius: 6px; border: 1px solid #e8dfd0; font-family: 'Helvetica Neue', sans-serif; font-size: 0.84rem; color: #666; line-height: 1.6; }
+.contact-note strong { color: #7a2d0e; }
+.impressum-section { background: #faf6f0; padding: 4rem 2rem; }
+.impressum-inner { max-width: 1100px; margin: 0 auto; }
+.impressum-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem; }
+.impressum-block h3 { font-family: 'Helvetica Neue', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: #c9a84c; margin-bottom: 0.8rem; }
+.impressum-block p, .impressum-block a { font-family: 'Helvetica Neue', sans-serif; font-size: 0.88rem; color: #555; line-height: 1.8; text-decoration: none; }
+.impressum-block a:hover { color: #7a2d0e; }
+footer { background: #1a0802; color: rgba(255,255,255,0.45); padding: 2.5rem 2rem; text-align: center; font-family: 'Helvetica Neue', sans-serif; font-size: 0.82rem; line-height: 2; }
+footer strong { color: rgba(255,255,255,0.75); }
+footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
+footer a:hover { color: rgba(255,255,255,0.65); }
+@media (max-width: 760px) {
+  .two-col { grid-template-columns: 1fr; gap: 2rem; }
+  .two-col.reverse .col-text { order: 1; }
+  .two-col.reverse .col-img { order: 2; }
+  .stats { flex-wrap: wrap; }
+  .stat { min-width: 50%; border-right: none; border-bottom: 1px solid #e8dfd0; }
+  .stat:nth-child(odd) { border-right: 1px solid #e8dfd0; }
+  nav .nav-links { display: none; }
+  .contact-split { grid-template-columns: 1fr; }
+  .impressum-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Taverna <span>Akropolis</span></a>
+  <ul class="nav-links">
+    <li><a href="#restaurant">Restaurant</a></li>
+    <li><a href="#speisekarte">Speisekarte</a></li>
+    <li><a href="#partyservice">Partyservice</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <a href="tel:+4957021874" class="nav-cta">Jetzt anrufen</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-overlay"></div>
+  <p class="hero-eyebrow">Petershagen-Lahde · Griechisches Restaurant · Nahe Minden</p>
+  <h1>Ein kleines Stück<br><em>Griechenland</em><br>mitten in Lahde</h1>
+  <p class="hero-sub">Traditionelle griechische Küche, herzliche Gastlichkeit und mediterrane Lebensfreude — täglich ab 17 Uhr.</p>
+  <div class="hero-actions">
+    <a href="#speisekarte" class="btn-primary">Zur Speisekarte</a>
+    <a href="#kontakt" class="btn-ghost">Tisch reservieren</a>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 40 Q360 0 720 30 Q1080 60 1440 20 L1440 60 L0 60 Z" fill="white"/>
+  </svg>
+</div>
+
+<div class="stats fade-in">
+  <div class="stat"><div class="stat-num">2016</div><div class="stat-label">Modernisiert</div></div>
+  <div class="stat"><div class="stat-num">Ab 17h</div><div class="stat-label">Mi – So geöffnet</div></div>
+  <div class="stat"><div class="stat-num">🇬🇷</div><div class="stat-label">Echte griechische Küche</div></div>
+  <div class="stat"><div class="stat-num">Opa!</div><div class="stat-label">Herzlich willkommen</div></div>
+</div>
+
+<div class="section-full" id="restaurant">
+  <div class="two-col fade-in">
+    <div class="col-text">
+      <p class="section-eyebrow">Unser Restaurant</p>
+      <h2 class="section-title">Griechische Gastfreundschaft in Petershagen-Lahde</h2>
+      <p class="section-body">In unserer Taverna Akropolis mitten im Herzen von Lahde empfangen wir Sie in unserem gemütlichen, 2016 modernisierten Restaurant. Hier bereiten wir für Sie traditionelle griechische Gerichte mit frischen Zutaten zu — Gyros, Souvlaki, Fisch und mehr.</p>
+      <p class="section-body" style="margin-top: 1rem;">Wir heißen Sie herzlich willkommen — Ihre Familie Baila.</p>
+      <a href="tel:+4957021874" class="btn-primary btn-red" style="margin-top: 2rem;">Reservieren: 05702 / 1874</a>
+    </div>
+    <div class="col-img">
+      <div class="col-img-placeholder greek">
+        <div style="font-size: 3rem; margin-bottom: 0.6rem;">🏛️</div>
+        <div class="col-img-label">Herzliche Atmosphäre</div>
+        <div class="col-img-main">Gemütlich<br>& Authentisch</div>
+        <div class="col-img-sub">Familie Baila heißt Sie willkommen</div>
+        <div class="photo-hint">→ Hier Ihr Restaurantfoto einfügen</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="menu-bg" id="speisekarte">
+  <div class="menu-inner">
+    <p class="menu-eyebrow fade-in">Unsere Küche</p>
+    <h2 class="menu-title fade-in">Griechische Spezialitäten</h2>
+    <p class="menu-sub fade-in">Traditionelle Gerichte aus Petershagen-Lahde nahe Minden — frische Zutaten, mediterrane Aromen</p>
+    <div class="menu-grid fade-in">
+      <div class="menu-item"><div class="menu-item-icon">🥗</div><div class="menu-item-name">Vorspeisen</div><div class="menu-item-desc">Tzatziki, Taramosalata, Melitzanosalata und weitere griechische Klassiker</div></div>
+      <div class="menu-item"><div class="menu-item-icon">🍖</div><div class="menu-item-name">Fleischgerichte</div><div class="menu-item-desc">Souvlaki, Gyros, Bifteki und Lamm nach griechischer Art</div></div>
+      <div class="menu-item"><div class="menu-item-icon">🐟</div><div class="menu-item-name">Fischgerichte</div><div class="menu-item-desc">Frischer Fisch und Meeresfrüchte, mediterran zubereitet</div></div>
+      <div class="menu-item"><div class="menu-item-icon">🥘</div><div class="menu-item-name">Vegetarisch</div><div class="menu-item-desc">Moussaka, gefüllte Paprika und weitere vegetarische Köstlichkeiten</div></div>
+      <div class="menu-item"><div class="menu-item-icon">🍷</div><div class="menu-item-name">Getränke</div><div class="menu-item-desc">Griechische Weine, Ouzo und eine große Auswahl an Erfrischungsgetränken</div></div>
+      <div class="menu-item"><div class="menu-item-icon">🍮</div><div class="menu-item-name">Desserts</div><div class="menu-item-desc">Baklava, Loukoumades und süße griechische Nachspeisen</div></div>
+    </div>
+    <div class="menu-cta">
+      <a href="https://www.akropolis-lahde.de/_files/ugd/ccf88a_f1e8f564e9dd4ee09abe6d9ab99856ca.pdf" target="_blank" class="btn-primary">Vollständige Speisekarte (PDF)</a>
+    </div>
+  </div>
+</div>
+
+<div class="section-full" id="partyservice">
+  <div class="two-col reverse fade-in">
+    <div class="col-text">
+      <p class="section-eyebrow">Partyservice</p>
+      <h2 class="section-title">Griechische Küche für jeden Anlass</h2>
+      <p class="section-body">Ob Geburtstag, Firmenevent oder Familienfeier in Petershagen oder Minden — wir liefern unsere Spezialitäten bequem nach Hause oder Sie holen sie bei uns ab. Ganz so, wie Sie es wünschen.</p>
+      <p class="section-body" style="margin-top: 1rem;">Holen Sie sich griechische Lebensart nach Hause. Gastlichkeit wird bei uns großgeschrieben.</p>
+      <a href="tel:+4957021874" class="btn-primary btn-red" style="margin-top: 2rem;">Jetzt anfragen: 05702 / 1874</a>
+    </div>
+    <div class="col-img">
+      <div class="col-img-placeholder gold">
+        <div style="font-size: 3rem; margin-bottom: 0.6rem;">🎉</div>
+        <div class="col-img-label">Für jeden Anlass</div>
+        <div class="col-img-main">Lieferung<br>oder Abholung</div>
+        <div class="col-img-sub">Griechische Lebensart zu Ihnen nach Hause</div>
+        <div class="photo-hint">→ Hier Ihr Partyservice-Foto einfügen</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="reviews-bg">
+  <div class="reviews-inner">
+    <p class="section-eyebrow fade-in">Kundenstimmen</p>
+    <h2 class="section-title fade-in">Was unsere Gäste sagen</h2>
+    <div class="reviews-grid">
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Wunderbares Essen, herzliche Atmosphäre. Das beste Gyros in der Region Minden! Wir kommen immer wieder gerne."</p>
+        <div class="review-author">— Google-Bewertung</div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">„Toller Partyservice! Familie Baila hat unsere Geburtstagsfeier perfekt versorgt. Alle Gäste waren begeistert."</p>
+        <div class="review-author">— Google-Bewertung</div>
+      </div>
+      <div class="review-card fade-in">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">„Authentisch griechisch, gemütliches Ambiente. Der Tzatziki ist einfach unschlagbar. Sehr empfehlenswert!"</p>
+        <div class="review-author">— Google-Bewertung</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="info-bg" id="oeffnungszeiten">
+  <div class="info-inner">
+    <p class="section-eyebrow fade-in">Besuch planen</p>
+    <h2 class="section-title fade-in">Öffnungszeiten & Anfahrt</h2>
+    <div class="info-grid">
+      <div class="info-card fade-in">
+        <div class="info-card-icon">🕔</div>
+        <h3>Öffnungszeiten</h3>
+        <div class="badge-open">Mi – So geöffnet</div>
+        <p><strong>Mo & Di:</strong> Ruhetag<br><strong>Mi – So:</strong> ab 17:00 Uhr<br><strong>Feiertage:</strong> bitte nachfragen</p>
+      </div>
+      <div class="info-card fade-in">
+        <div class="info-card-icon">📍</div>
+        <h3>Adresse</h3>
+        <p><strong>Taverna Akropolis</strong><br>Bahnhofstr. 55<br>32469 Petershagen-Lahde<br><br><a href="tel:+4957021874">05702 / 1874</a></p>
+      </div>
+      <div class="info-card fade-in">
+        <div class="info-card-icon">💳</div>
+        <h3>Bezahlung</h3>
+        <div class="badge-cash">Nur Barzahlung</div>
+        <p>Bitte beachten Sie, dass wir ausschließlich Barzahlung akzeptieren. Ein Geldautomat ist in der Nähe vorhanden.</p>
+      </div>
+      <div class="info-card fade-in">
+        <div class="info-card-icon">🚗</div>
+        <h3>Parken</h3>
+        <p>Ausreichend <strong>kostenlose Parkplätze</strong> direkt am Restaurant. Gut erreichbar aus Minden und Petershagen.</p>
+      </div>
+    </div>
+    <div class="map-consent fade-in" id="map-consent">
+      <p>Für die Kartenanzeige wird Google Maps verwendet. Dabei werden Daten an Google LLC (USA) übertragen. Mit dem Klick stimmen Sie der Nutzung zu.</p>
+      <button class="btn-primary btn-red" onclick="loadMap()">Google Maps laden</button>
+      <small>Datenschutzhinweis: Google Maps ist ein Dienst der Google LLC. Weitere Infos in unserer <a href="#impressum" style="color:#7a2d0e;">Datenschutzerklärung</a>.</small>
+    </div>
+    <div class="map-wrap" id="map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443!2d8.978!3d52.348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBahnhofstra%C3%9Fe+55%2C+32469+Petershagen!5e0!3m2!1sde!2sde!4v1680000000000" allowfullscreen="" loading="lazy" title="Taverna Akropolis auf Google Maps"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="cta-bar">
+  <h2>Wir freuen uns auf Sie!</h2>
+  <p>Reservieren Sie Ihren Tisch oder fragen Sie unseren Partyservice an. Familie Baila begrüßt Sie herzlich.</p>
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+    <a href="tel:+4957021874" class="btn-primary">📞 05702 / 1874</a>
+    <a href="#kontakt" class="btn-ghost">Nachricht schreiben</a>
+  </div>
+</div>
+
+<div class="section-full" id="kontakt">
+  <p class="section-eyebrow fade-in">Kontakt</p>
+  <h2 class="section-title fade-in">Schreiben Sie uns</h2>
+  <div class="contact-split fade-in">
+    <div>
+      <div class="form-group"><label>Ihr Name *</label><input type="text" placeholder="Max Mustermann" id="fn"></div>
+      <div class="form-group"><label>E-Mail-Adresse *</label><input type="email" placeholder="max@beispiel.de" id="fe"></div>
+      <div class="form-group"><label>Telefon (optional)</label><input type="tel" placeholder="05702 / ..." id="fp"></div>
+      <div class="form-group">
+        <label>Anliegen</label>
+        <select id="ft">
+          <option>Tischreservierung</option>
+          <option>Partyservice anfragen</option>
+          <option>Allgemeine Frage</option>
+          <option>Feedback</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Nachricht *</label><textarea placeholder="Wie können wir Ihnen helfen?" id="fm"></textarea></div>
+      <button class="btn-primary btn-red" onclick="sendForm()" id="submit-btn">Nachricht senden</button>
+      <div class="form-sending" id="fsending">⏳ Wird gesendet...</div>
+      <div class="form-success" id="fsuccess">✅ Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns bald.</div>
+      <div class="form-error" id="ferror">❌ Fehler beim Senden. Bitte rufen Sie uns an: <a href="tel:+4957021874">05702 / 1874</a></div>
+    </div>
+    <div class="contact-info">
+      <p>📍 Bahnhofstr. 55, 32469 Petershagen-Lahde<br>📞 <a href="tel:+4957021874">05702 / 1874</a><br>🕔 Mi – So ab 17:00 Uhr<br>🏖️ Mo & Di Ruhetag</p>
+      <div class="contact-note"><strong>Tipp:</strong> Für Reservierungen und Partyservice-Anfragen rufen Sie uns am besten direkt an. Wir beraten Sie gerne persönlich und stimmen alle Details mit Ihnen ab.</div>
+    </div>
+  </div>
+</div>
+
+<div id="impressum" class="impressum-section">
+  <div class="impressum-inner">
+    <p class="section-eyebrow">Rechtliches</p>
+    <h2 class="section-title" style="font-size:1.8rem;">Impressum & Datenschutz</h2>
+    <div class="impressum-grid">
+      <div class="impressum-block">
+        <h3>Angaben gemäß § 5 TMG</h3>
+        <p>
+          Taverna Akropolis<br>
+          Inhaber: [Vor- und Nachname eintragen]<br>
+          Bahnhofstr. 55<br>
+          32469 Petershagen-Lahde<br><br>
+          Tel: <a href="tel:+4957021874">05702 / 1874</a><br>
+          E-Mail: [E-Mail-Adresse eintragen]
+        </p>
+      </div>
+      <div class="impressum-block">
+        <h3>Umsatzsteuer</h3>
+        <p>
+          Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:<br>
+          [USt-IdNr. eintragen]<br><br>
+          Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+          [Vor- und Nachname], Bahnhofstr. 55, 32469 Petershagen
+        </p>
+      </div>
+      <div class="impressum-block">
+        <h3>Datenschutzerklärung</h3>
+        <p>
+          <strong>Verantwortlicher:</strong> [Name], Bahnhofstr. 55, 32469 Petershagen<br><br>
+          <strong>Kontaktformular:</strong> Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.<br><br>
+          <strong>Google Maps:</strong> Nur nach Ihrer ausdrücklichen Zustimmung wird Google Maps geladen. Dabei werden Daten an Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA übertragen. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO.<br><br>
+          <strong>Cookies:</strong> Diese Website setzt keine Tracking-Cookies.
+        </p>
+      </div>
+      <div class="impressum-block">
+        <h3>Ihre Rechte (DSGVO)</h3>
+        <p>
+          Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit. Zur Ausübung Ihrer Rechte wenden Sie sich an die oben genannte Adresse.<br><br>
+          Sie haben außerdem das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.<br><br>
+          <strong>Haftungsausschluss:</strong> Trotz sorgfältiger Prüfung übernehmen wir keine Haftung für externe Links. Öffnungszeiten und Preise ohne Gewähr.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <strong>Taverna Akropolis</strong> · Bahnhofstr. 55 · 32469 Petershagen-Lahde<br>
+  Tel: <a href="tel:+4957021874">05702 / 1874</a> · Mi – So ab 17:00 Uhr · Mo & Di Ruhetag<br>
+  <a href="#impressum">Impressum</a> · <a href="#impressum">Datenschutz</a>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+function loadMap() {
+  document.getElementById('map-consent').style.display = 'none';
+  document.getElementById('map-wrap').style.display = 'block';
+}
+
+async function sendForm() {
+  const name = document.getElementById('fn').value.trim();
+  const email = document.getElementById('fe').value.trim();
+  const msg = document.getElementById('fm').value.trim();
+  if (!name || !email || !msg) { alert('Bitte füllen Sie alle Pflichtfelder (*) aus.'); return; }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) { alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.'); return; }
+
+  document.getElementById('submit-btn').disabled = true;
+  document.getElementById('fsending').style.display = 'block';
+
+  try {
+    const response = await fetch('https://formspree.io/f/FORMSPREE_ID', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        phone: document.getElementById('fp').value,
+        topic: document.getElementById('ft').value,
+        message: msg
+      })
+    });
+    document.getElementById('fsending').style.display = 'none';
+    if (response.ok) {
+      document.getElementById('fsuccess').style.display = 'block';
+      document.getElementById('fn').value = '';
+      document.getElementById('fe').value = '';
+      document.getElementById('fp').value = '';
+      document.getElementById('fm').value = '';
+    } else {
+      document.getElementById('ferror').style.display = 'block';
+      document.getElementById('submit-btn').disabled = false;
+    }
+  } catch(e) {
+    document.getElementById('fsending').style.display = 'none';
+    document.getElementById('ferror').style.display = 'block';
+    document.getElementById('submit-btn').disabled = false;
+  }
+}
+</script>
+</body>
+</html>
